@@ -1,12 +1,12 @@
-# _{Application Name}_
+# _Count Up By_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _A webpage that counts up by a specified number, 8-16-16_
 
-#### By _**Caleb Stevenson**_
+#### By _**Caleb Stevenson &amp; Chance Neff**_
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_A webpage that will implement html, css, JavaScript and jQuery to take user's input and count up to a specified number by the first specified number and then stop._
 
 ## Setup/Installation Requirements
 
@@ -22,15 +22,16 @@ _None yet_
 ## Support and contact details
 
 * _Caleb Stevenson: cgrahamstevenson@gmail.com_
+* _Chance Neff: crneff84@gmail.com_
 
 ## Technologies Used
 
 _HTML,
 CSS,
-JS,_
+JS_
 
 ### License
 
 *This webpage is licensed under the GPL license.*
 
-Copyright (c) 2016 **_Caleb Stevenson_**
+Copyright (c) 2016 **_Caleb Stevenson &amp; Chance Neff_**
