@@ -1,6 +1,6 @@
 var totalArray = [];
 var countLoop = function(multiple, endNumber) {
-  for (var total = 0; total <= endNumber; total += multiple) {
+  for (var total = multiple; total <= endNumber; total += multiple) {
     totalArray.push(total);
   };
   return totalArray;
@@ -11,13 +11,20 @@ $(function(){
     event.preventDefault();
     var firstInput = parseInt($("input#first-input").val());
     var secondInput = parseInt($("input#second-input").val());
-    countLoop(firstInput, secondInput);
-    console.log(totalArray);
-    console.log(firstInput);
-    console.log(secondInput);
-    totalArray.forEach(function(result){
-    $("#results").append("<li>" + result + "</li>")
-    });
-    $("#results").show();
+
+    if (firstInput && secondInput) {
+      if (firstInput > 0 || secondInput > 0) {
+        countLoop(firstInput, secondInput);
+        totalArray.forEach(function(result){
+        $("#results").append("<li>" + result + "</li>")
+        });
+        $("#results").show();
+      } else {
+          alert("Please enter a number greater than 0!");
+      }
+    } else {
+      alert("Make sure you entered numbers into both input fields. Don't be stupid!");
+    }
+
   });
 });
